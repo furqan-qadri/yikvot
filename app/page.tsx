@@ -19,14 +19,14 @@ export default function Home() {
     <div className="">
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrollY > 50 ? "bg-white shadow-md" : "bg-transparent"
+          scrollY > 80 ? "bg-[#ED4141] shadow-md" : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between p-4">
             <Link
               href="/"
-              className="text-red-300 hover:text-red-600 transition-colors"
+              className="text-white transition-colors text-3xl font-bold hover:text-red-600"
             >
               Yikvot
             </Link>
