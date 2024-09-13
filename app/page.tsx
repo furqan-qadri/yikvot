@@ -24,7 +24,10 @@ export default function Home() {
       >
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between p-4">
-            <Link href="/" className="text-4xl font-bold text-white">
+            <Link
+              href="/"
+              className="text-red-300 hover:text-red-600 transition-colors"
+            >
               Yikvot
             </Link>
             <ul className="flex space-x-8">
@@ -39,7 +42,7 @@ export default function Home() {
               <li>
                 <Link
                   href="/books"
-                  className="text-white transition-colors text-xl font-bold"
+                  className="text-white transition-colors text-xl font-bold hover:text-red-600"
                 >
                   Books
                 </Link>
@@ -117,7 +120,7 @@ export default function Home() {
               {[1, 2, 3].map((book) => (
                 <div
                   key={book}
-                  className="bg-white p-8 rounded-2xl shadow-lg transition-transform hover:scale-105"
+                  className="bg-red-300 p-8 rounded-2xl shadow-lg transition-transform hover:scale-105"
                 >
                   <div className="w-40 h-56 bg-gradient-to-br from-red-200 to-red-300 mx-auto mb-6 rounded-lg flex items-center justify-center">
                     <BookOpen className="w-20 h-20 text-red-800" />
