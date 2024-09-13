@@ -16,30 +16,30 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-red-50 to-white">
+    <div className="">
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrollY > 50 ? "bg-white shadow-md" : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto px-4 ">
+        <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between p-4">
-            <Link href="/" className="text-2xl font-bold text-red-800">
+            <Link href="/" className="text-4xl font-bold text-white">
               Yikvot
             </Link>
             <ul className="flex space-x-8">
-              <li>
+              {/* <li>
                 <Link
                   href="/"
                   className="text-red-800 hover:text-red-600 transition-colors"
                 >
                   Home
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/books"
-                  className="text-red-800 hover:text-red-600 transition-colors"
+                  className="text-white transition-colors text-xl font-bold"
                 >
                   Books
                 </Link>
@@ -47,7 +47,7 @@ export default function Home() {
               <li>
                 <Link
                   href="/about"
-                  className="text-red-800 hover:text-red-600 transition-colors"
+                  className="text-white transition-colors text-xl font-bold"
                 >
                   About
                 </Link>
@@ -55,7 +55,7 @@ export default function Home() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-red-800 hover:text-red-600 transition-colors"
+                  className="text-white transition-colors text-xl font-bold"
                 >
                   Contact
                 </Link>
@@ -71,17 +71,17 @@ export default function Home() {
           <div className="absolute inset-0 opacity-20">
             <ChinarPattern />
           </div>
-          <div className="container mx-auto px-4 z-10">
+          <div className="container mx-auto px-4 z-10 mt-10">
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 text-white">
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                   Discover Kashmir's Literary Treasures
                 </h1>
-                <p className="text-xl md:text-2xl mb-8 max-w-lg">
+                <p className="text-2xl md:text-2xl mb-8 max-w-lg">
                   Explore our vast archive of Kashmiri books and manuscripts,
                   preserving centuries of cultural heritage.
                 </p>
-                <Button className="bg-white text-red-600 hover:bg-red-100 hover:text-red-700 transition-colors text-lg xl:p-8  p-4 rounded-full">
+                <Button className="bg-white text-red-600 hover:bg-red-100 hover:text-red-700 transition-colors text-lg xl:p-8  p-6 rounded-full">
                   Explore Books
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -155,8 +155,8 @@ export default function Home() {
                 placeholder="Search for books, authors, or topics"
                 className="flex-grow text-lg py-6 rounded-l-full"
               />
-              <Button className="bg-red-800 text-white hover:bg-red-700 transition-colors text-lg px-8 rounded-r-full">
-                <Search className="w-5 h-5 mr-2" />
+              <Button className="bg-red-800 text-white hover:bg-red-700 transition-colors text-lg px-8 rounded-r-full h-full">
+                <Search className="w-5 h-full mr-2" />
                 Search
               </Button>
             </div>
