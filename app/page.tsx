@@ -18,54 +18,46 @@ export default function Home() {
   return (
     <div className="">
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrollY > 80 ? "bg-[#ED4141] shadow-md" : "bg-transparent"
+        className={`fixed container mx-auto top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrollY > 80
+            ? "bg-white rounded-b-2xl shadow-lg"
+            : "bg-white rounded-b-2xl shadow-sm"
         }`}
       >
         <div className="container mx-auto">
-          <nav className="flex items-center justify-between p-4">
+          <nav className="flex items-center justify-between px-6 py-4">
             <Link
               href="/"
-              className="text-white transition-colors text-2xl xl:text-3xl font-bold hover:text-red-600"
+              className="text-2xl xl:text-3xl font-bold text-[#ED4141] hover:opacity-90 transition-opacity"
             >
               Yikvot
             </Link>
-            <div>
-              <ul className="flex space-x-8">
-                {/* <li>
+            <ul className="flex space-x-6">
+              <li>
                 <Link
                   href="/"
-                  className="text-red-800 hover:text-red-600 transition-colors"
+                  className="text-2xl xl:text-xl font-bold text-[#ED4141] hover:opacity-90 transition-opacity"
                 >
-                  Home
+                  Books
                 </Link>
-              </li> */}
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white transition-colors text-lg xl:text-xl font-bold hover:text-red-600"
-                  >
-                    Books
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white transition-colors text-lg xl:text-xl font-bold"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li className=" hidden">
-                  <Link
-                    href="/contact"
-                    className="text-white transition-colors text-xl font-bold"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-2xl xl:text-xl font-bold text-[#ED4141] hover:opacity-90 transition-opacity"
+                >
+                  About
+                </Link>
+              </li>
+              <li className="hidden">
+                <Link
+                  href="/contact"
+                  className="text-gray-800 text-lg xl:text-xl font-medium hover:text-[#ED4141] transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </nav>
         </div>
       </header>
