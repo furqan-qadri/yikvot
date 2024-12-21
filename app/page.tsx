@@ -36,7 +36,7 @@ export default function Home() {
               <li>
                 <Link
                   href="/"
-                  className="text-2xl xl:text-xl font-bold text-[#ED4141] hover:opacity-90 transition-opacity"
+                  className="text-xl xl:text-xl font-bold text-[#ED4141] hover:opacity-90 transition-opacity"
                 >
                   Books
                 </Link>
@@ -44,7 +44,7 @@ export default function Home() {
               <li>
                 <Link
                   href="/"
-                  className="text-2xl xl:text-xl font-bold text-[#ED4141] hover:opacity-90 transition-opacity"
+                  className="text-xl xl:text-xl font-bold text-[#ED4141] hover:opacity-90 transition-opacity"
                 >
                   About
                 </Link>
